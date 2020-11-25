@@ -30,4 +30,5 @@ npm install
 
 # Point to DB_HOST, need to find a way to take this from a Vagrantfile
 # Works fine though
+# Don't need DB_PORT since MongoDB assigned to 0.0.0.0 which listens across all ports
 DB_HOST=192.168.33.20 pm2 start app.js
