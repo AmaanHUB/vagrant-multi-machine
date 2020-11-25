@@ -1,10 +1,5 @@
 # Vagrant Multi-Machine (With One Vagrantfile)
 
-## Requirements
-* Vagrant
-* Ruby
-* Virtual Box
-
 ## Task
 
 ### Summary
@@ -51,3 +46,16 @@ rake spec
 * Instructions have a clear step by step
 
 * repo exists on github
+
+# Documentation
+
+## Requirements
+* Vagrant
+* Ruby
+* Virtual Box
+* Git
+
+## Running
+* First clone the directory with `git clone`
+* Go into the directory and run `vagrant up`
+* **Ta-dah, your environment is up**
