@@ -55,6 +55,10 @@ rake spec
 * Virtual Box
 * Git
 
+
+## Introduction
+
+Running a multi-virtual machine environment to make sure the Sparta app works. The two machines make up of a database and the app.
 ## Running
 * First clone the directory with `git clone`
 * Go into the directory and run `vagrant up`
