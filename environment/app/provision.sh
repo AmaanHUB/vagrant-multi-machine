@@ -1,7 +1,8 @@
 #!/bin/bash
 #
 # provision.sh
-# Distributed under terms of the MIT license.
+#
+# Need to sort out the versioning of the software installed, but that can be done later
 
 sudo apt update && sudo apt upgrade
 
@@ -18,7 +19,7 @@ sudo apt install nodejs -y
 sudo apt install npm -y
 
 # Install pm2 with npm
-sudo npm install pm2
+sudo npm install pm2 -g
 
 # go to app and run
 cd /app
@@ -26,4 +27,6 @@ cd /app
 npm install
 
 # need to change this bit in a bit
-npm start
+
+# may need to change this to npm start & after the environment variables
+DB_HOST=database.local PORT=27017 pm2 start app.js &
