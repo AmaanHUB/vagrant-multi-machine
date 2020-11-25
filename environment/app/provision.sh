@@ -28,5 +28,6 @@ npm install
 
 # need to change this bit in a bit
 
-# may need to change this to npm start & after the environment variables
-DB_HOST=database.local PORT=27017 pm2 start app.js &
+# Point to DB_HOST, need to find a way to take this from a Vagrantfile
+# Works fine though
+DB_HOST=192.168.33.20 pm2 start app.js
